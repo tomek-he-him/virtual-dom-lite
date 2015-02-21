@@ -13,6 +13,8 @@
 , "devDependencies":
   { "?": "Run `npm install browserify babelify tape-run node-tap` and save them here"
 
+  , "?": "Run `npm install babel tape-catch` and save them here"
+
   , "?": "Run `npm install gulp gulp-babel` and save them here"
   }
 
