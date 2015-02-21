@@ -1,0 +1,36 @@
+{ "name": "…"
+, "version": "0.0.0"
+, "description": "…"
+
+, "dependencies":
+  {}
+
+, "scripts":
+  { "test": "babel-node test/*.js | tap-spec"
+  , "prepublish": "gulp build"
+  }
+
+, "devDependencies":
+  { "?": "Run `npm install babel node-tap` and save it here"
+
+  , "?": "Run `npm install gulp gulp-babel` and save it here"
+  }
+
+, "main": "/dist.es5/index.js"
+, "files":
+  [ "/dist.es5/"
+  , "/dist.es6/"
+  , "Readme.md"
+  , "License.md"
+  ]
+
+, "license": "MIT"
+, "keywords":
+  [ "…"
+  ]
+, "author": "Tomek Wiszniewski <t.wiszniewski@gmail.com>"
+, "repository":
+  { "type": "git"
+  , "url": "git@github.com:tomekwi/….git"
+  }
+}
