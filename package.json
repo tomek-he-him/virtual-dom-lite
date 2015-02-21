@@ -6,14 +6,14 @@
   {}
 
 , "scripts":
-  { "test": "babel-node test/*.js | tap-spec"
+  { "test": "browserify test.js --transform babelify | tape-run --browser=phantom | tap-spec"
   , "prepublish": "gulp build"
   }
 
 , "devDependencies":
-  { "?": "Run `npm install babel node-tap` and save it here"
+  { "?": "Run `npm install browserify babelify tape-run node-tap` and save them here"
 
-  , "?": "Run `npm install gulp gulp-babel` and save it here"
+  , "?": "Run `npm install gulp gulp-babel` and save them here"
   }
 
 , "main": "/dist.es5/index.js"
