@@ -33,7 +33,7 @@ Usage
 License
 -------
 
-[MIT][] © [Tomek Wiszniewski][].
+[MIT][] © [Tomek Wiszniewski][]
 
 [MIT]: ./License.md
 [Tomek Wiszniewski]: https://github.com/tomekwi
