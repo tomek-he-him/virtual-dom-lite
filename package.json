@@ -15,7 +15,7 @@
 
   , "?": "Run `npm install babel tape-catch` and save them here"
 
-  , "?": "Run `npm install gulp gulp-babel` and save them here"
+  , "?": "Run `npm install gulp gulp-babel del` and save them here"
   }
 
 , "main": "/dist.es5/index.js"

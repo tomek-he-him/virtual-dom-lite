@@ -3,36 +3,53 @@
 
 var gulp = require("gulp");
 var babel = require("gulp-babel");
+var del = require("del");
 
 
-// Common settings
-// ---------------
-
-var common =
-  { scriptsSource: "source/**/*.js"
-  };
 
 
 // `gulp build`
-// ------------
+// -------------------------------------------------------------------------------------------------
 
-gulp.task("build", ["scripts"]);
+gulp.task("build", ["clean", "scripts"]);
+
+
 
 
 // `gulp scripts`
-// --------------
+// -------------------------------------------------------------------------------------------------
+
+var scripts =
+  { source: "source/**/*.js"
+  };
 
 gulp.task("scripts", ["scripts:es6", "scripts:es5"]);
 
-gulp.task("scripts:es6", function () {
-  return gulp.src(common.scriptsSource)
-    .pipe(gulp.dest("dist.es6"))
-    ;
+gulp.task("scripts:es6"
+  , ["scripts:clean"]
+  , function () {
+    return gulp.src(scripts.source)
+      .pipe(gulp.dest("dist.es6"))
+      ;
+    }
+  );
+
+gulp.task("scripts:es5"
+  , ["scripts:clean"]
+  , function () {
+    return gulp.src(scripts.source)
+      .pipe(babel())
+      .pipe(gulp.dest("dist.es5"))
+      ;
+    }
+  );
+
+gulp.task("scripts:clean", function (done) {
+  del(scripts.source, done);
   });
 
-gulp.task("scripts:es5", function () {
-  return gulp.src(common.scriptsSource)
-    .pipe(babel())
-    .pipe(gulp.dest("dist.es5"))
-    ;
-  });
+
+// `gulp clean`
+// -------------------------------------------------------------------------------------------------
+
+gulp.task("clean", ["scripts:clean"]);
