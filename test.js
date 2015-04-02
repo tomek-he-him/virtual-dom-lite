@@ -1,3 +1,3 @@
-import "babel/polyfill";
+import 'babel/polyfill';
 
-import test from "tape-catch";
+import test from 'tape-catch';
