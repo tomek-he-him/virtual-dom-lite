@@ -15,15 +15,15 @@
 
   , "?": "Run `npm install babel tape-catch` and save them here"
 
-  , "?": "Run `npm install gulp gulp-babel del` and save them here"
+  , "?": "Run `npm install del gulp gulp-babel gulp-help` and save them here"
   }
 
 , "main": "/dist.es5/index.js"
 , "files":
   [ "/dist.es5/"
   , "/dist.es6/"
-  , "Readme.md"
-  , "License.md"
+  , "/Readme.md"
+  , "/License.md"
   ]
 
 , "license": "MIT"
