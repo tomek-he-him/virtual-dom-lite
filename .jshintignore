@@ -1,5 +1,7 @@
+#
 # Files ignored by jsHint
 # =======================
+#
 
 # - Built files
 /index.js

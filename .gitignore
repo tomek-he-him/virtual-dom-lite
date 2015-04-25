@@ -1,19 +1,21 @@
+#
 # Files ignored by Git
 # ====================
+#
 
-# - Built files,
+# - Built files
 /dist.es5/
 /dist.es6/
 
-# - All files and directories starting with "#",
+# - All files and directories starting with "#"
 \#*
 
-# - Automatically installed dependencies,
+# - Automatically installed dependencies
 /node_modules/
 
-# - Test coverage reports,
+# - Test coverage reports
 /coverage/
 
-# - Editor files.
+# - Editor files
 *.sublime-project
 *.sublime-workspace
