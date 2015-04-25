@@ -1,5 +1,3 @@
 language: node_js
 node_js:
-- '0.10'
-
-# Run `travis setup npm`. Add `deploy.on.all_branches: true`.
+- '0.12'
