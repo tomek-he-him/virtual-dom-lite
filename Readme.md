@@ -1,12 +1,12 @@
 [![Coveralls – test coverage
-](https://img.shields.io/coveralls/tomekwi/….svg?style=flat-square)
-](https://coveralls.io/r/tomekwi/…)
+](https://img.shields.io/coveralls/tomekwi/virtual-dom-lite.svg?style=flat-square)
+](https://coveralls.io/r/tomekwi/virtual-dom-lite)
  [![Travis – build status
-](https://img.shields.io/travis/tomekwi/…/master.svg?style=flat-square)
-](https://travis-ci.org/tomekwi/…)
+](https://img.shields.io/travis/tomekwi/virtual-dom-lite/master.svg?style=flat-square)
+](https://travis-ci.org/tomekwi/virtual-dom-lite)
  [![David – status of dependencies
-](https://img.shields.io/david/tomekwi/….svg?style=flat-square)
-](https://david-dm.org/tomekwi/…)
+](https://img.shields.io/david/tomekwi/virtual-dom-lite.svg?style=flat-square)
+](https://david-dm.org/tomekwi/virtual-dom-lite)
  [![Code style: airbnb
 ](https://img.shields.io/badge/code%20style-airbnb-blue.svg?style=flat-square)
 ](https://github.com/airbnb/javascript)
@@ -17,16 +17,21 @@
 
 
 
-…
+virtual-dom-lite
 ===
 
-**…**
+**A *0.5 kB*<sup>* </sup> partial implementation of [*virtual-dom*][1].**  
+**Perfect for libraries.**
+
+<sup>*</sup> I haven’t checked it yet :)
+
+[1]:  https://github.com/Matt-Esch/virtual-dom  "A Virtual DOM and diffing algorithm"
 
 
 ###  ⚠  ###
 This is totally a work in progress. [Thoughts and ideas][] are very welcome.
 
-[Thoughts and ideas]:  https://github.com/tomekwi/…/issues
+[Thoughts and ideas]:  https://github.com/tomekwi/virtual-dom-lite/issues
 
 
 
@@ -35,7 +40,7 @@ Installation
 ------------
 
 ```sh
-$ npm install …
+$ npm install virtual-dom-lite
 ```
 
 
