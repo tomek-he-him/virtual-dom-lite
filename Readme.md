@@ -20,10 +20,12 @@
 virtual-dom-lite
 ===
 
-**A partial implementation of [*virtual-dom*][1] in 500 bytes*.**  
+**A partial implementation of [*virtual-dom*][1]**  
+**in 500 bytes*.**
+
 **Perfect for libraries.**
 
-* I haven’t checked it yet :)
+* Estimate – I haven’t checked it yet :)
 
 [1]:  https://github.com/Matt-Esch/virtual-dom  "A Virtual DOM and diffing algorithm"
 
