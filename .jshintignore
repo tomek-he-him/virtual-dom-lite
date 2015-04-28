@@ -1,0 +1,13 @@
+#
+# Files ignored by jsHint
+# =======================
+#
+
+# - Built files
+/*.js
+!/gulpfile.js
+!/module.js
+!/test.js
+
+# - Automatically installed dependencies
+/node_modules/
