@@ -25,6 +25,7 @@
   , "tap-spec": "2.2.2"
 
   , "tape-catch": "1.0.4"
+  , "domify": "tomekwi/domify#2c12e68"
   }
 
 , "files":
