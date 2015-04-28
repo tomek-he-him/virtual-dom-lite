@@ -23,7 +23,7 @@
   }
 
 , "files":
-  [ "/!(gulpfile).js"
+  [ "/*.js"
   , "/module/"
   , "/test/"
   , "/Readme.md"
