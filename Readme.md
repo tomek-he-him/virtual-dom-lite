@@ -52,7 +52,23 @@ $ npm install virtual-dom-lite
 Usage
 -----
 
-…
+1) Import the module:
+
+```js
+import {patchElement, vNote, vPatch} from 'virtual-dom-lite/module';
+```
+
+– or – in an ES5 environment:
+
+```js
+require('virtual-dom-lite/polyfills');
+var virtualDOMLite = require('virtual-dom-lite');
+
+var patchElement = virtualDOMLite.patchElement;
+var vNote = virtualDOMLite.vNote;
+var vPatch = virtualDOMLite.vPatch;
+```
+
 
 
 

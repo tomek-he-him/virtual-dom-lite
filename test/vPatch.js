@@ -3,7 +3,7 @@ import diff from 'virtual-dom/diff';
 import h from 'virtual-dom/h';
 import isSubset from 'is-subset';
 
-import {vPatch} from '../module/index';
+import vPatch from '../module/vPatch';
 
 test('vPatch:  ' +
   'Produces a VirtualPatch-compatible object.', (is) => {

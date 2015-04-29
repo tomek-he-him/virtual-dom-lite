@@ -2,8 +2,9 @@ import test from 'tape-catch';
 import element from './tools/element';
 import h from 'virtual-dom/h';
 import diff from 'virtual-dom/diff';
+import vNode from '../module/vNode';
 
-import {vNode, patchElement} from '../module/index';
+import patchElement from '../module/patchElement';
 
 const dewhitespace = (string) => string.replace(/\s/g, '');
 
