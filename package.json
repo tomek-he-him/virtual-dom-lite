@@ -3,7 +3,8 @@
 , "description": "A partial implementation of virtual-dom — in 500 bytes."
 
 , "dependencies":
-  {}
+  { "object-assign": "2.0.0"
+  }
 
 , "scripts":
   { "build": "cd module && babel --out-dir ../ *.js"

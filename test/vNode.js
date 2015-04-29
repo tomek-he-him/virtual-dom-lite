@@ -2,7 +2,7 @@ import test from 'tape-catch';
 import isVNode from 'virtual-dom/vnode/is-vnode';
 import element from './tools/element';
 
-import vNode from '../module/vNode';
+import {vNode} from '../module/index';
 
 test('vNode:  ' +
   'Converts an element to a VirtualNode.', (is) => {
