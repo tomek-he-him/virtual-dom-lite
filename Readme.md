@@ -21,11 +21,13 @@ virtual-dom-lite
 ================
 
 **A partial implementation of [*virtual-dom*][1]**  
-**in 500 bytes*.**
+**in under 600 bytes*.**
 
 **Perfect for libraries.**
 
-* Estimate – I haven’t checked it yet :)
+<sup>
+  *&emsp;The size of the transpiled and minzipped <code>patchElement.js</code>, <code>vNode.js</code> and <code>vPatch.js</code> modules was around 200 bytes each, the last time I checked.
+</sup>
 
 [1]:  https://github.com/Matt-Esch/virtual-dom  "A Virtual DOM and diffing algorithm"
 
@@ -52,10 +54,11 @@ $ npm install virtual-dom-lite
 Usage
 -----
 
+
 1) Import the module:
 
 ```js
-import {patchElement, vNote, vPatch} from 'virtual-dom-lite/module';
+import {patchElement, vNode, vPatch} from 'virtual-dom-lite/module';
 ```
 
 – or – in an ES5 environment:
@@ -65,9 +68,20 @@ require('virtual-dom-lite/polyfills');
 var virtualDOMLite = require('virtual-dom-lite');
 
 var patchElement = virtualDOMLite.patchElement;
-var vNote = virtualDOMLite.vNote;
+var vNode = virtualDOMLite.vNode;
 var vPatch = virtualDOMLite.vPatch;
 ```
+
+
+2) *Coming soon…*
+
+
+
+
+API
+===
+
+*Coming soon…*
 
 
 
