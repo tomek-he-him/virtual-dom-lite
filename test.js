@@ -1,1 +1,3 @@
-import test from 'tape-catch';
+import './test/patchElement';
+import './test/vNode';
+import './test/vPatch';

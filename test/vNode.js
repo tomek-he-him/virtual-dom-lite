@@ -1,12 +1,12 @@
 import test from 'tape-catch';
 import isVNode from 'virtual-dom/vnode/is-vnode';
-import element from '../test-tools/element';
+import element from './tools/element';
 
-import vNodify from '../../source/tools/vNodify';
+import vNode from '../module/vNode';
 
-test('tools/vNodify:  ' +
+test('tools/vNode:  ' +
   'Converts an element to a VirtualNode.', (is) => {
-    let node1 = vNodify({
+    let node1 = vNode({
       attributes: [
         { name: 'class', value: 'class one two three' },
         { name: 'id', value: 'element-id' }
@@ -34,7 +34,7 @@ test('tools/vNodify:  ' +
       '— directly from the prototype'
     );
 
-    let node2 = vNodify(element(
+    let node2 = vNode(element(
       '<custom-element ' +
         'class="anything" ' +
         'align="left" ' +

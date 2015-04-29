@@ -1,16 +1,14 @@
 import test from 'tape-catch';
-import element from '../test-tools/element';
+import element from './tools/element';
 import h from 'virtual-dom/h';
 import diff from 'virtual-dom/diff';
-import vNodify from '../../source/tools/vNodify';
+import vNode from '../module/vNode';
 
-import updateElement from '../../source/tools/updateElement';
+import patchElement from '../module/patchElement';
 
-function dewhitespace(string) {
-  return string.replace(/\s/g, '');
-}
+const dewhitespace = (string) => string.replace(/\s/g, '');
 
-test('tools/updateElement:  ' +
+test('tools/patchElement:  ' +
   'Works.', (is) => {
     let element1 = element(
       '<div ' +
@@ -22,7 +20,7 @@ test('tools/updateElement:  ' +
       '</div>'
     );
 
-    updateElement(element1,
+    patchElement(element1,
       { '0':
         { type: 4,
           patch: {
@@ -58,7 +56,7 @@ test('tools/updateElement:  ' +
       '</div>'
     );
 
-    updateElement(element2,
+    patchElement(element2,
       diff(
         h('div', {
           class: 'anything',
@@ -98,9 +96,9 @@ test('tools/updateElement:  ' +
       '</div>'
     );
 
-    updateElement(element3,
-      diff(vNodify(element3),
-        vNodify(element(
+    patchElement(element3,
+      diff(vNode(element3),
+        vNode(element(
           '<div ' +
             'class="class one two three" ' +
             'align="left" ' +

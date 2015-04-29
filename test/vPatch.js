@@ -1,11 +1,11 @@
 import test from 'tape-catch';
 import diff from 'virtual-dom/diff';
 import h from 'virtual-dom/h';
-import objectContains from '../test-tools/objectContains';
+import objectContains from './tools/objectContains';
 
-import vPatchify from '../../source/tools/vPatchify';
+import vPatch from '../module/vPatch';
 
-test('tools/vPatchify:  ' +
+test('tools/vPatch:  ' +
   'Produces a VirtualPatch-compatible object.', (is) => {
     is.ok(
       objectContains(
@@ -21,7 +21,7 @@ test('tools/vPatchify:  ' +
             d: '4'
           })
         ),
-        vPatchify({
+        vPatch({
           b: undefined,
           'c-c': '4',
           d: '4'
