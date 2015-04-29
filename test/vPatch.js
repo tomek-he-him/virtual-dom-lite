@@ -1,14 +1,14 @@
 import test from 'tape-catch';
 import diff from 'virtual-dom/diff';
 import h from 'virtual-dom/h';
-import objectContains from './tools/objectContains';
+import isSubset from 'is-subset';
 
 import vPatch from '../module/vPatch';
 
 test('tools/vPatch:  ' +
   'Produces a VirtualPatch-compatible object.', (is) => {
     is.ok(
-      objectContains(
+      isSubset(
         diff(
           h('svg', {
             a: '1',
