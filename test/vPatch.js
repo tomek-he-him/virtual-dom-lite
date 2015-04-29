@@ -5,7 +5,7 @@ import isSubset from 'is-subset';
 
 import vPatch from '../module/vPatch';
 
-test('tools/vPatch:  ' +
+test('vPatch:  ' +
   'Produces a VirtualPatch-compatible object.', (is) => {
     is.ok(
       isSubset(

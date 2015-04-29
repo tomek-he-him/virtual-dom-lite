@@ -4,7 +4,7 @@ import element from './tools/element';
 
 import vNode from '../module/vNode';
 
-test('tools/vNode:  ' +
+test('vNode:  ' +
   'Converts an element to a VirtualNode.', (is) => {
     let node1 = vNode({
       attributes: [

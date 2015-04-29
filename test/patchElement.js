@@ -8,7 +8,7 @@ import patchElement from '../module/patchElement';
 
 const dewhitespace = (string) => string.replace(/\s/g, '');
 
-test('tools/patchElement:  ' +
+test('patchElement:  ' +
   'Works.', (is) => {
     let element1 = element(
       '<div ' +
