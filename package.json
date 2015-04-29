@@ -1,5 +1,5 @@
 { "name": "virtual-dom-lite"
-, "version": "0.0.0-work-in-progress"
+, "version": "0.0.1"
 , "description": "A partial implementation of virtual-dom — in 500 bytes."
 
 , "dependencies":
