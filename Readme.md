@@ -70,16 +70,40 @@ var vPatch = virtualDOMLite.vPatch;
 ```
 
 
-2) *Coming soon…*
+2) Profit!
+
+```js
+const div = document.createElement('div');
+
+const vDiv = vNode(div);                 // Compatible virtual-dom as well!
+const patch = vPatch({class: 'a b c'});  // Compatible virtual-dom as well!
+
+patchElement(div, patch);
+div.outerHTML;
+//» <div class="a b c"></div>
+```
 
 
 
 
-API
-===
+Caveats
+-------
 
-*Coming soon…*
+`vNode` and `patchElement` only support the `attributes` property. `vPatch` only sets attributes. If you construct your diffs using virtual-dom, remember about it:
 
+```js
+const {diff, h} = require('virtual-dom');
+
+patchElement(div, diff(
+  h('div', {class: 'a'}),
+  h('div', {class: 'b'})
+));  // Won’t work.
+
+patchElement(div, diff(
+  h('div', {attributes: {class: 'a'}}),
+  h('div', {attributes: {class: 'b'}})
+));  // Works!
+```
 
 
 
