@@ -18,10 +18,10 @@ test('vNode:  ' +
     );
 
     is.deepEqual(node1.properties,
-      {
+      {attributes: {
         class: 'class one two three',
         id: 'element-id'
-      },
+      }},
       '— getting `properties` right'
     );
 
@@ -47,10 +47,10 @@ test('vNode:  ' +
     );
 
     is.deepEqual(node2.properties,
-      {
+      {attributes: {
         class: 'anything',
         align: 'left'
-      },
+      }},
       '— getting `properties` right'
     );
 

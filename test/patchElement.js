@@ -21,16 +21,15 @@ test('patchElement:  ' +
     );
 
     patchElement(element1,
-      { '0':
-        { type: 4,
-          patch: {
-            class: 'class one two three',
-            'data-something': 'even better',
-            checked: '',
-            id: undefined
-          }
-        }
-      }
+      {'0': {
+        type: 4,
+        patch: {attributes: {
+          class: 'class one two three',
+          'data-something': 'even better',
+          checked: '',
+          id: undefined
+        }}
+      }}
     );
 
     is.equal(dewhitespace(element1.outerHTML),
@@ -58,18 +57,18 @@ test('patchElement:  ' +
 
     patchElement(element2,
       diff(
-        h('div', {
+        h('div', {attributes: {
           class: 'anything',
           align: 'left',
           id: 'element-id',
           'data-something': 'good',
-        }),
-        h('div', {
+        }}),
+        h('div', {attributes: {
           class: 'class one two three',
           align: 'left',
           'data-something': 'even better',
           checked: ''
-        })
+        }})
       )
     );
 
