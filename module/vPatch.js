@@ -1,7 +1,7 @@
-export default (properties) => {
+export default (attributes) => {
   return {
     '0': {
-      patch: require('object-assign')({}, properties)
+      patch: {attributes}
     }
   };
 };
