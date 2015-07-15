@@ -20,16 +20,14 @@
 virtual-dom-lite
 ================
 
-**A partial implementation of [*virtual-dom*][1]**  
-**in under 600 bytes*.**
+**A partial implementation of *[virtual-dom][]***  
+**3 separate modules á 200 bytes*.**
 
 **Perfect for libraries.**
 
-<sup>
-  *&emsp;The size of the transpiled and minzipped <code>patchElement.js</code>, <code>vNode.js</code> and <code>vPatch.js</code> modules was around 200 bytes each, the last time I checked.
-</sup>
+*&emsp;Transpiled to ES5 and minzipped, the last time I checked.
 
-[1]:  https://github.com/Matt-Esch/virtual-dom  "A Virtual DOM and diffing algorithm"
+[virtual-dom]:  https://github.com/Matt-Esch/virtual-dom  "A Virtual DOM and diffing algorithm"
 
 
 
