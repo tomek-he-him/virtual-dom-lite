@@ -10,16 +10,16 @@ test('vPatch:  ' +
     is.ok(
       isSubset(
         diff(
-          h('svg', {
+          h('span', {attributes: {
             a: '1',
             b: '2',
             'c-c': '3'
-          }),
-          h('svg', {
+          }}),
+          h('span', {attributes: {
             a: '1',
             'c-c': '4',
             d: '4'
-          })
+          }})
         ),
         vPatch({
           b: undefined,
