@@ -1,19 +1,19 @@
 [![Coveralls – test coverage
-](https://img.shields.io/coveralls/tomekwi/virtual-dom-lite.svg?style=flat-square)
-](https://coveralls.io/r/tomekwi/virtual-dom-lite)
- [![Travis – build status
-](https://img.shields.io/travis/tomekwi/virtual-dom-lite/master.svg?style=flat-square)
-](https://travis-ci.org/tomekwi/virtual-dom-lite)
- [![David – status of dependencies
-](https://img.shields.io/david/tomekwi/virtual-dom-lite.svg?style=flat-square)
-](https://david-dm.org/tomekwi/virtual-dom-lite)
- [![Code style: airbnb
-](https://img.shields.io/badge/code%20style-airbnb-blue.svg?style=flat-square)
-](https://github.com/airbnb/javascript)
- [![Stability: experimental
-](https://img.shields.io/badge/stability-experimental-red.svg?style=flat-square)
-](https://nodejs.org/api/documentation.html#documentation_stability_index)
-
+](https://img.shields.io/coveralls/tomekwi/virtual-dom-lite.svg?style=flat-square
+)](https://coveralls.io/r/tomekwi/virtual-dom-lite
+) [![Travis – build status
+](https://img.shields.io/travis/tomekwi/virtual-dom-lite/master.svg?style=flat-square
+)](https://travis-ci.org/tomekwi/virtual-dom-lite
+) [![David – status of dependencies
+](https://img.shields.io/david/tomekwi/virtual-dom-lite.svg?style=flat-square
+)](https://david-dm.org/tomekwi/virtual-dom-lite
+) [![Stability: experimental
+](https://img.shields.io/badge/stability-experimental-yellow.svg?style=flat-square
+)](https://nodejs.org/api/documentation.html#documentation_stability_index
+) [![Code style: airbnb
+](https://img.shields.io/badge/code%20style-airbnb-777777.svg?style=flat-square
+)](https://github.com/airbnb/javascript
+)
 
 
 
