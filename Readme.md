@@ -75,12 +75,12 @@ var vPatch = virtualDOMLite.vPatch;
 ```js
 const div = document.createElement('div');
 
-const vDiv = vNode(div);                 // Compatible virtual-dom as well!
-const patch = vPatch({class: 'a b c'});  // Compatible virtual-dom as well!
+const vDiv = vNode(div);                 // Compatible with virtual-dom as well!
+const patch = vPatch({class: 'a b c'});  // Compatible with virtual-dom as well!
 
 patchElement(div, patch);
 div.outerHTML;
-//» <div class="a b c"></div>
+//» '<div class="a b c"></div>'
 ```
 
 
