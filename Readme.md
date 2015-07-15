@@ -59,10 +59,9 @@ Usage
 import {patchElement, vNode, vPatch} from 'virtual-dom-lite/module';
 ```
 
-– or – in an ES5 environment:
+– or in ES5:
 
 ```js
-require('virtual-dom-lite/polyfills');
 var virtualDOMLite = require('virtual-dom-lite');
 
 var patchElement = virtualDOMLite.patchElement;
