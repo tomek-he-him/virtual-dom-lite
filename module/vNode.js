@@ -1,3 +1,5 @@
+const arrayFrom = require('array-from');
+
 let vNodeProto = {
   tagName: 'DIV',
   children: [],
@@ -9,7 +11,7 @@ export default (element) => {
   let vNode = Object.create(vNodeProto);
 
   const properties = vNode.properties = {};
-  Array.from(element.attributes).forEach((attribute) => {
+  arrayFrom(element.attributes).forEach((attribute) => {
     properties[attribute.name] = attribute.value;
   });
 

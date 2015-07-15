@@ -2,7 +2,8 @@
 , "version": "0.0.1"
 , "description": "A partial implementation of virtual-dom — in 500 bytes."
 , "dependencies":
-  { "object-assign": "^3.0.0"
+  { "array-from": "^1.0.0"
+  , "object-assign": "^3.0.0"
   }
 , "scripts":
   { "build": "cd module && babel --loose es6.modules --out-dir ../ *.js"
