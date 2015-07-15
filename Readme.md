@@ -20,14 +20,14 @@
 virtual-dom-lite
 ================
 
-**A partial implementation of [*virtual-dom*][]**  
+**A partial implementation of [virtual-dom][]**  
 **3 separate modules á 200 bytes*.**
 
 **Perfect for libraries.**
 
-*&emsp;Transpiled to ES5 and minzipped, the last time I checked.
+<sup>*&emsp;Transpiled to ES5 and minzipped, the last time I checked.</sup>
 
-[*virtual-dom*]:  https://github.com/Matt-Esch/virtual-dom  "A Virtual DOM and diffing algorithm"
+[virtual-dom]:  https://github.com/Matt-Esch/virtual-dom  "A Virtual DOM and diffing algorithm"
 
 
 
