@@ -10,9 +10,9 @@ let vNodeProto = {
 export default (element) => {
   let vNode = Object.create(vNodeProto);
 
-  const properties = vNode.properties = {};
+  const properties = vNode.properties = {attributes: {}};
   arrayFrom(element.attributes).forEach((attribute) => {
-    properties[attribute.name] = attribute.value;
+    properties.attributes[attribute.name] = attribute.value;
   });
 
   if (element.tagName) vNode.tagName = element.tagName;
