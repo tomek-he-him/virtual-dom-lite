@@ -1,6 +1,6 @@
 { "name": "virtual-dom-lite"
-, "version": "0.0.1"
-, "description": "A partial implementation of virtual-dom — in 500 bytes."
+, "version": "0.1.0"
+, "description": "A partial implementation of virtual-dom — in about 600 bytes."
 , "dependencies":
   { "array-from": "^1.0.0"
   , "object-assign": "^3.0.0"
