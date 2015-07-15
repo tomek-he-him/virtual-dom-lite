@@ -9,12 +9,12 @@
   { "build": "cd module && babel --loose es6.modules --out-dir ../ *.js"
   , "clean": "git reset && echo '/node_modules/' > .gitignore && git add .gitignore && git stash save --include-untracked --keep-index '`npm run clean` trash can' && git clean --force -d && git reset --hard && echo '\nclean: Uncommitted and ignored files have been moved to git’s stash. To restore them run `git stash pop --quiet; git checkout .gitignore`.'"
   , "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls"
-  , "coverage": "npm run test:prepare && istanbul cover test.es5.js"
+  , "coverage": "npm run test:transpile && istanbul cover .es5/test.js"
   , "develop": "nodangel --ignore node_modules --exec 'npm run test:lite'"
   , "prepublish": "npm run clean && npm run build"
-  , "test": "jshint . && npm run test:prepare && node test.es5.js | tap-spec"
+  , "test": "jshint . && npm run test:transpile && node .es5/test.js | tap-spec"
   , "test:lite": "babel-node test.js | tap-spec"
-  , "test:prepare": "babel *.js module/*.js test/*.js test/*/*.js --out-dir .es5"
+  , "test:transpile": "babel *.js module/*.js test.js test/*.js test/*/*.js --out-dir .es5"
   }
 , "devDependencies":
   { "babel": "5.6.14"
