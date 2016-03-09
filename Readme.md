@@ -1,3 +1,5 @@
+**⚠ Heads up!** This repo is no longer maintained. If you’d like to take over this project, [let me know](https://github.com/tomekwi/virtual-dom-lite/issues/new).
+
 [![Coveralls – test coverage
 ](https://img.shields.io/coveralls/tomekwi/virtual-dom-lite.svg?style=flat-square
 )](https://coveralls.io/r/tomekwi/virtual-dom-lite
@@ -29,12 +31,6 @@ virtual-dom-lite
 
 [virtual-dom]:  https://github.com/Matt-Esch/virtual-dom  "A Virtual DOM and diffing algorithm"
 
-
-
-
-**⚠ Heads up!** This is totally a work in progress. [Thoughts and ideas][] are very welcome.
-
-[Thoughts and ideas]:  https://github.com/tomekwi/virtual-dom-lite/issues
 
 
 
